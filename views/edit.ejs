@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro to Node and MongoDB</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<body>
+<h1>Registration Form</h1>
+<form method="post" action="/update/<%=register._id%>">
+    <table>
+        <tr>
+            <td><label>First Name</label></td>
+            <td><input type="text" name="firstname" value="<%=register.firstname%>" placeholder="Enter first name"></td>
+        </tr>
+        <tr>
+            <td><label>Last Name</label></td>
+            <td><input type="text" name="lastname" value="<%=register.lastname%>" placeholder="Enter last name"></td>
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td><input type="text" name="address" value="<%=register.address%>" placeholder="Enter address"></td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="text" name="email" value="<%=register.email%>" placeholder="Enter email"></td>
+        </tr>
+        <tr>
+            <td><label>Username</label></td>
+            <td><input type="text" name="username" value="<%=register.username%>" placeholder="Enter username"></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="text" name="password" value="<%=register.password%>" placeholder="Enter password"></td>
+        </tr>
+        <tr>
+            <td><label>Gender</label></td>
+            <td><input type="text" name="gender" value="<%=register.gender%>" placeholder="Enter gender"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Save"></td>
+        </tr>
+    </table>
+</form>
+</body>
+
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Intro to Node and MongoDB</title>
+    </head>
+    <body>
+    <form>
+        <a href="/add">Add</a>
+        <table border="1">
+
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>Lastname</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                   <% results.forEach((element)=>{ %>
+                   <tr>
+                       <td><%=element.firstname%></td>
+                       <td><%=element.lastname%></td>
+                       <td><%=element.address%></td>
+                       <td><%=element.email%></td>
+                       <td><%=element.username%></td>
+                       <td><%=element.password%></td>
+                       <td><%=element.gender%></td>
+                       <td>
+                           <a href="/edit?id=<%=element.id%>">edit</a>
+                           <a href="/delete/<%=element.id%>">delete</a>
+                          <!--<a href="/delete?id=<%=element.id%>">delete</a>-->
+                       </td>
+                   </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </form>
+    </body>
+</html>
